@@ -1,0 +1,214 @@
+/* Variáveis */
+
+:root {
+    --cor-fundo: #000000;
+    --cor-cabecalho: #2020208c;
+    --cor-texto-principal: #e4e0e0ab;
+    --cor-texto-secundaria: #f6f6f6;
+    --cor-button: #0071e3;
+    --fonte: font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}   
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Body */
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+/* Header */
+
+#cabecalho {
+    background-color: var(--cor-cabecalho);
+}
+
+#cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#menu-imagem {
+    height: 3rem;
+    width: 3.5rem;
+}
+
+.menu-links {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-size: 1.2rem;
+}
+
+#navbar-descricoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+#menu-descricoes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 17rem;
+}
+
+#menu-sub-titulo {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#menu-titulo {
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+#descricoes-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-right: 16rem;
+}
+
+#descricoes-link {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.descricoes-links {
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#descricoes-button {
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte);
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--cor-button);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid var(--cor-texto-principal);
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-cabecalho);
+    padding: 1.8rem 0;
+    gap: 0.5rem;
+}
+
+#conteudo h3 {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#conteudo a {
+    color: var(--cor-button);
+    font-family: var(--fonte);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#macbook-imagem {
+    padding: 5rem 0 5rem 15rem;
+} 
+
+#conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo-texto h1 {
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte);
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+#conteudo-texto h2 {
+    color: var(--cor-texto-principal); 
+    font-family: var(--fonte);
+    font-size: 7rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+#conteudo-texto p {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-size: 2.6rem;
+    font-weight: bold;
+    max-width: 60%;
+    line-height: 3.2rem;
+}
+
+#conteudo-descricoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+#texto-preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 2.6rem;
+}
